@@ -16,6 +16,8 @@ fetchData = async (type, userInput) => {
 
       if (jsonResponse.pagination.total_count === 0) {
         errorMessage = "No gif found. Try again";
+      } else {
+        errorMessage = "";
       }
 
       for (let i = 0; i < jsonResponse.data.length; i++) {
