@@ -25,6 +25,11 @@ h2 {
   text-align: center;
 }
 
+.error-message {
+  color: red;
+  font-size: 2rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
