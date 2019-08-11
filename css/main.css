@@ -1,0 +1,101 @@
+* {
+  /* https://css-tricks.com/snippets/css/system-font-stack/ */
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1em;
+}
+
+header {
+  text-align: center; 
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-bar {
+  display: flex;
+  align-items: left;
+  width: 100%;
+}
+
+#search {
+  width: 200px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 1rem;
+  margin-left: 3rem;
+}
+
+#button {
+  font-size: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #4CAF50; 
+  padding: 0.5rem;
+}
+
+#button:hover {
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+#gif-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#gif-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gif {
+  width: auto;
+  height: 200px;
+  margin: 0.2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+}
+  
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container a {
+  color: silver;
+  font-size: 2rem;
+  margin: 1rem;
+  text-decoration: none;
+}
