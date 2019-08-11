@@ -12,7 +12,6 @@ fetchData = async (type, userInput) => {
     if (response.status === 200) {
       const jsonResponse = await response.json();
       const gifDataArray = [];
-      console.log(jsonResponse.pagination.total_count);
 
       if (jsonResponse.pagination.total_count === 0) {
         errorMessage = "No gif found. Try again";
@@ -49,8 +48,8 @@ const populateGallery = (data, errorMessage) => {
 
   data.forEach(item => {
     const gifElement = document.createElement("img");
-    gifElement.setAttribute('class', 'gif');
-    gifElement.setAttribute('src', item.gifUrl);
+    gifElement.setAttribute("class", "gif");
+    gifElement.setAttribute("src", item.gifUrl);
     gifGallery.appendChild(gifElement);
   })
 }
@@ -69,6 +68,3 @@ const handleSubmit = async (event) => {
 }
 
 getTrendingGifs();
-
-
-
